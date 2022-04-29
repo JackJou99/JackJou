@@ -1,0 +1,10 @@
+# JackJou
+Config files for my GitHub profile.
+//1~100之间的奇数
+for(int a = 0;a<=100;a++)
+    {
+    if (0 != a%2)
+        {
+        printf("%d\n",a);
+        }
+    }

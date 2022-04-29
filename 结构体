@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    struct book
+    {
+        char name[20];
+        int price;
+    };
+    struct book b1 = {"C语言结构体",55};    //对于数组想要修改其内容，不能通过b1.name = "C++结构体"这种方式给定，需要借助库函数strcpy(b1.name,"C++结构体")；
+    printf("书名是%c,价格为%d",b1.name,b1.price);
+}
+
+
+//选用间接寻址方式
+#include<stdio.h>
+int main()
+{
+    struct book
+    {
+        char name[20];
+        int price;
+    };
+    struct book b1 = {"C语言结构体",55};
+    struct book*p = &b1
+    printf("书名是%c,价格为%d",(*p).name,(*p).price);
+}

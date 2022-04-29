@@ -21,8 +21,30 @@
 		  break;
                 case 6:
                   printf("星期六\n");
+		  break；
                 case 7:
                   printf("星期日\n");
 		  break;
 	    }
-}
+        }
+	
+	//
+		int main
+	{
+	    int day = 0;
+	    scanf("%d".&day);
+	    switch(day)    //该处变量只能用整型
+	    {
+	        case 1:
+                case 2: 
+                case 3:
+                case 4:
+                case 5:
+                  printf("工作日\n");    //当前几个条件输出的结果都一样时，可以只用一个输出语句；
+		  break;
+                case 6:
+                case 7:
+                  printf("休息日\n");
+		  break;
+	    }
+        }
